@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Item.create(addedby: 'Cindy', title: 'Spice Girls', description: 'The girl band from the 90s I used to listen to!', url: 'http://c.files.bbci.co.uk/4470/production/_107102571_spicegirlsphotoshop.png' )
