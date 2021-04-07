@@ -29,8 +29,6 @@ class App extends Component {
               <Route exact path="/" component={ Home }/>
               <Route exact path="/items" component={ itemsIndex }/>
               <Route exact path="/items/new" component={ Form }/>
-             
-              
               <Route component={ErrorPage}/>
             </Switch>
           </div>

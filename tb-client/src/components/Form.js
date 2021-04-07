@@ -30,23 +30,23 @@ class Form extends Component {
                 <h3>Add a Throwback</h3>
                 <form onSubmit={ this.handleSubmit }>
                     <div>
-                    <label htmlFor="title">Title: </label>
-                    <input type="text" id="title" name="title" value={this.state.title} onChange={ this.handleChange } />
+                        <label htmlFor="title">Title: </label>
+                        <input type="text" id="title" name="title" value={this.state.title} onChange={ this.handleChange } />
                     </div>
                     <br />
                     <div>
-                    <label htmlFor="descripton">Description: </label>
-                    <input type="text" id="description" name="description" value={this.state.description} onChange={ this.handleChange } />
+                        <p><label htmlFor="descripton">Description: </label></p>
+                        <textarea type="text" id="description" name="description" value={this.state.description} onChange={ this.handleChange } ></textarea>
                     </div>
                     <br />
                     <div>
-                    <label htmlFor="addedby">Added By: </label>
-                    <input type="text" id="addedby" name="addedby" value={this.state.addedby} onChange={ this.handleChange } />
+                        <label htmlFor="addedby">Added By: </label>
+                        <input type="text" id="addedby" name="addedby" value={this.state.addedby} onChange={ this.handleChange } />
                     </div>
                     <br />
                     <div>
-                    <label htmlFor="url"> Image:</label>
-                    <input type="text" id="url" name="url" value={this.state.url} onChange={ this.handleChange } />
+                        <label htmlFor="url"> Image URL:</label>
+                        <input type="text" id="url" name="url" value={this.state.url} onChange={ this.handleChange } />
                     </div>
                     <br />
                     <input type="submit" value="Create Throwback" />

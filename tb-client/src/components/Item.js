@@ -3,14 +3,18 @@ import React, { Component } from 'react'
 
 class Item extends Component {
     render() {
-        const { title, addedby, id, description, url } = this.props
+        const { title, addedby, description, url } = this.props
         return (
             
             <div>
+                <br />
                 <h3>{ title }</h3>
-                <li>Created By: { addedby }</li>
-                <p>{url}</p>
+                <img src={url} alt={title}></img>
+        
                 <p>{description}</p>
+                <li>Added By: { addedby }</li>
+                <br />
+                <hr />
                 
             </div>
             
