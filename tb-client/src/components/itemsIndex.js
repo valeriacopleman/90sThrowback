@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Item from './Item'
+import { Link } from 'react-router-dom';
 
 
 class itemsIndex extends Component {
@@ -10,6 +11,10 @@ class itemsIndex extends Component {
             
             <div >
                 { items }
+                <div className="App">
+                <button className="btn"><Link to="/items/new">+Add a Throwback</Link></button>
+                </div>
+                <br/>
             </div>
         )
     }

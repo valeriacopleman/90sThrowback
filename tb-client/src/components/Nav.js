@@ -9,7 +9,7 @@ class Nav extends Component {
                 <ul >
                     <button className="btn" ><Link to="/">Home</Link></button>
                     <button className="btn"> <Link to="/items">Throwbacks!</Link></button>
-                    <button className="btn"><Link to="/items/new">+Add a Throwback</Link></button>
+                    
                     <button className="btn"><Link to="/music">90sHits</Link></button>
                 </ul>
                 <br />
