@@ -1,20 +1,28 @@
 import React, { Component } from 'react'
-//import ReactPlayer from "react-player"
-//import PropTypes from "prop-types";
 
 export class Music extends Component {
     render() {
         return (
-            <div>
+            <div className="App"> 
+                <br />
+                
                 <iframe
-      width="853"
-      height="480"
-      src={'https://www.youtube.com/embed/M6j7AuEckAc'}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
-    />
+                    width="1000"
+                    height="600"
+                   
+                    
+                    src={'https://www.youtube.com/embed/M6j7AuEckAc'}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded youtube"
+                />
+                   <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </div>
         )
     }

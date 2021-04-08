@@ -1,21 +1,27 @@
 import React, { Component } from 'react'
 
 
+
 class Item extends Component {
     render() {
         const { title, addedby, description, url } = this.props
         return (
             
-            <div >
+            <div className="App" >
+               
+            
+               <div className="items">
+                    <h3 >{ title }</h3>
+                    <lable className="container"> {description} -Added By: { addedby } </lable>
+                <br/>
+                <br/>
+                <img width="500" height="300" src={url} alt={title}></img>
                 <br />
-                <h3>{ title }</h3>
-                <img src={url} alt={title}></img>
-        
-                <p>{description}</p>
-                <li>Added By: { addedby }</li>
                 <br />
-                <hr />
-                
+                <br />
+                </div>
+                <br/>
+                <br/>
             </div>
             
             

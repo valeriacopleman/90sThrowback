@@ -27,31 +27,46 @@ class Form extends Component {
 
         return (
             <div>
-                <h3>Add a Throwback</h3>
+            <div className="form">
+            <br/>
+            <br/>
+                <ul>
+                <lable className="container">Add a Throwback</lable>
                 <form onSubmit={ this.handleSubmit }>
+                    <br/>
                     <div>
-                        <label htmlFor="title">Title: </label>
-                        <input type="text" id="title" name="title" value={this.state.title} onChange={ this.handleChange } />
+                        <label htmlFor="title"></label>
+                        <input type="text" id="title" name="title" placeholder="Title" value={this.state.title} onChange={ this.handleChange } />
+                    </div>
+                   <br/>
+                    <div>
+                        <p><label htmlFor="descripton"></label></p>
+                        <textarea type="text" id="description" name="description" placeholder="Description" value={this.state.description} onChange={ this.handleChange } ></textarea>
                     </div>
                     <br />
                     <div>
-                        <p><label htmlFor="descripton">Description: </label></p>
-                        <textarea type="text" id="description" name="description" value={this.state.description} onChange={ this.handleChange } ></textarea>
+                        <label htmlFor="addedby"></label>
+                        <input type="text" id="addedby" name="addedby" placeholder="Your Name" value={this.state.addedby} onChange={ this.handleChange } />
                     </div>
                     <br />
                     <div>
-                        <label htmlFor="addedby">Added By: </label>
-                        <input type="text" id="addedby" name="addedby" value={this.state.addedby} onChange={ this.handleChange } />
-                    </div>
-                    <br />
-                    <div>
-                        <label htmlFor="url"> Image URL:</label>
-                        <input type="text" id="url" name="url" value={this.state.url} onChange={ this.handleChange } />
+                        <label htmlFor="url"></label>
+                        <input type="text" id="url" name="url" placeholder="Image URL" value={this.state.url} onChange={ this.handleChange } />
                     </div>
                     <br />
                     <input type="submit" value="Create Throwback" />
                 </form>
+                </ul>
+                <br/>
+                <br/>
             </div>
+            <br/>
+            <br/>
+            <br/>
+           
+
+            </div>
+            
         )
     }
 }

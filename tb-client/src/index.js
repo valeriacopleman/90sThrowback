@@ -8,6 +8,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import itemsReducer from './reducers/itemsReducer';
 
+
 const store = createStore(itemsReducer, applyMiddleware(thunk))
 ReactDOM.render(
   <React.StrictMode>

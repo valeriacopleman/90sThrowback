@@ -4,7 +4,7 @@ class Footer extends Component {
     render() {
         return (
             
-            <div>
+            <div className="footer">
                  <br />
                <p> &copy; Property of 90sThrowback</p>
                 
