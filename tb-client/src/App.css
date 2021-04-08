@@ -24,15 +24,15 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.jumbotron {
+  background: url("http://www.wipremiertrivia.com/wp-content/uploads/2018/04/90s-Wallpaper.jpg") no-repeat center center fixed; 
+  background-size: cover;
+    color: #fff;
+    min-height: 500px;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .navbar {
+    background-color: aquamarine;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+

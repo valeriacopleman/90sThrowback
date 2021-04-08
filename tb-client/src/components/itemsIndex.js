@@ -5,10 +5,10 @@ import Item from './Item'
 
 class itemsIndex extends Component {
     render() {
-        const items = this.props.items.map( (item, i) => <Item key={i} id={item.id} title={item.title} description={item.description} addedby={item.addedby} url={item.url} />)
+        const items = this.props.items.map( (item, i) => <Item key={i} title={ item.title } description={ item.description } addedby={ item.addedby } url= { item.url} />)
         return (
             
-            <div>
+            <div >
                 { items }
             </div>
         )

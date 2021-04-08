@@ -6,7 +6,7 @@ class Item extends Component {
         const { title, addedby, description, url } = this.props
         return (
             
-            <div>
+            <div >
                 <br />
                 <h3>{ title }</h3>
                 <img src={url} alt={title}></img>

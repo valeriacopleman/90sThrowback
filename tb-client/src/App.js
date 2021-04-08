@@ -8,6 +8,8 @@ import Nav from './components/Nav'
 import itemsIndex from './components/itemsIndex'
 import { getItems } from './actions/items';
 import Form from './components/Form'
+import Music from './components/Music'
+import "./App.css";
 
 
 class App extends Component {
@@ -24,11 +26,12 @@ class App extends Component {
     return (
       <Router> 
         <Nav />
-          <div className="App">
+          <div  >
             <Switch>  
               <Route exact path="/" component={ Home }/>
               <Route exact path="/items" component={ itemsIndex }/>
               <Route exact path="/items/new" component={ Form }/>
+              <Route exact path="/music" component={ Music }/>
               <Route component={ErrorPage}/>
             </Switch>
           </div>

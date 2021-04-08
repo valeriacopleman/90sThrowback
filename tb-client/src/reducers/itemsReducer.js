@@ -16,10 +16,10 @@ const initialState = {
           loading: false,
           items: action.items
         }
-      case "ADD_ITEMS":
+      case "ADD_ITEM":
         return {
           ...state,
-          items: [...state.items, action.items]
+          items: [...state.items, action.item]
         }
       default:
         return state;
