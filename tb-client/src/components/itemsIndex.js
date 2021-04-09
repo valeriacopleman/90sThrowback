@@ -15,6 +15,7 @@ class itemsIndex extends Component {
                 <button className="btn"><Link to="/items/new">+Add a Throwback</Link></button>
                 </div>
                 <br/>
+                <br/>
             </div>
         )
     }
